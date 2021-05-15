@@ -190,7 +190,7 @@ footer {
   font-size: 24px !important;
   line-height: 29px !important;
   text-transform: none !important;
-  margin-top: 100px;
+  margin-top: 17vh;
 }
 
 #about-us-text-foot {
@@ -208,4 +208,50 @@ footer {
 
 .email-box > i {
   color: #fff !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .text-description-main-lhero {
+    font-size: 18px !important;
+  }
+  #img-logo-hero-up {
+    margin-top: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .text-description-main-lhero {
+    font-size: 14px !important;
+    line-height: 18px !important;
+    margin-top: 10vh !important;
+    text-align: justify !important;
+    padding: 0 15px 0 15px !important;
+    font-weight: 500 !important;
+  }
+  .fullscreen-subtitle-home {
+    height: 25vh !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .text-description-main-lhero {
+    font-size: 12px !important;
+    line-height: 15px !important;
+    margin-top: 9vh !important;
+    text-align: justify !important;
+    padding: 0 15px 0 15px !important;
+    font-weight: 300 !important;
+  }
+  .fullscreen-subtitle-home {
+    height: 27vh !important;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .cd-main-header {
+    height: 80px !important;
+  }
+  .text-description-main-lhero {
+    padding: 0 10px 0 10px !important;
+  }
 }
