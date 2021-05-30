@@ -22,7 +22,9 @@
             transform: translateX(100%);
         }
     </style>
+    <!-- styles for rack and footer positioning   -->
     <style>
+        
         #id {
         width: 40vw;
         height: 12vw;
@@ -997,6 +999,72 @@
 
 
     </script>
+    <!-- Scripts for tab navigation from outside the page -->
+    <script>
+        var r_str = window.location.search;
+        if(r_str.length > 1) {
+            r_str = r_str.slice(1,r_str.length);
+            console.log(r_str);
+        }
+        
 
+        switch(r_str){
+            case 'cat1':
+                {
+                    cat1();
+                    down();
+                    break;
+                }
+                case 'cat2':
+                {
+                    cat2();
+                    down();
+                    break;
+                }
+                case 'cat3':
+                {
+                    cat3();
+                    down();
+                    break;
+                }
+                case 'cat4':
+                {
+                    cat4();
+                    down();
+                    break;
+                }
+            
+            case 'cat5':
+                {
+                    cat5();
+                    down();
+                    break;
+                }
+            
+            default:{
+                console.log('no');
+            }
+        }
+
+
+        function down(){
+        var x = 1; //y-axis pixel displacement
+        var y = 15; //delay in milliseconds
+        setInterval(function() {
+            if(x<document.documentElement.clientHeight+10){window.scroll(0, x);}
+            if(x>document.documentElement.clientHeight+20){
+                return;
+            }
+            x = x + 5; //if you want to increase speed simply increase increment interval
+            console.log(x);
+        }, y);
+
+    }
+
+        
+        
+
+        
+    </script>
     </body>
 </html>
