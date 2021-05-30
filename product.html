@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/stylesheet.css">
+    <title>Document</title>
+    <style>
+        #round-image{
+            width: 500px;
+            height:500px;
+        }
+        #cat01, #cat02, #cat03,#cat04,#cat05 {
+            position: absolute ;
+            transition: 1s ease;
+        }
+        #cat01{
+            transform: translateX(0px);
+        }
+        #cat02, #cat03,#cat04,#cat05{
+            transform: translateX(100%);
+        }
+    </style>
+    <style>
+        #id {
+        width: 40vw;
+        height: 12vw;
+        }
+        #row{
+            height: 12vw;
+            width: 75vw;
+        }
+        #item{
+            margin-left: 2vw;
+        }
+        #id2 {
+        width: 40vw;
+        height: 6.6vw;
+        }
+        #id4 {
+        width: 40vw;
+        height: 7vw;
+        }
+        #id3 {
+        width: 40vw;
+        height: 7vw;
+        }
+
+        
+        @media screen and (min-width: 1024px) {
+            #space{
+            height: 0vh;
+        }
+            
+        }
+        @media screen and (min-width: 1270px) {
+            #space{
+            height: 35vw;
+        }
+            
+        }
+        
+        @media screen and (min-width: 1360px) {
+            #space{
+            height: 40vw;
+        }
+            
+        }
+        
+        @media screen and (min-width: 1400px) {
+            #space{
+            height: 35vw;
+        }
+            
+        }
+        @media screen and (min-width: 1700px) {
+            #space{
+            height: 35vh;
+        }
+            
+        }
+        @media screen and (min-width: 1800px) {
+            #space{
+            height: 40vh;
+        }
+            
+        }
+        @media screen and (min-width: 1900px) {
+            #space{
+            height: 35vw;
+        }
+    
+            
+        }
+        @media screen and (min-width: 2020px) {
+            #space{
+            height: 80vh;
+        }
+            
+        }
+        @media screen and (min-width: 2200px) {
+            #space{
+            height: calc(25vw * 2);
+        }
+            
+        }
+            
+
+    </style>
+</head>
+    <body class="overflow-x-hidden">
+        <div class="relative min-h-screen bg-cover bg-center flex" style="background-image: url(./background.png);">
+            
+            <div id="mg-img" class=" w-full  absolute -bottom-24 -left-20 ">
+                <img id="round-image"  src="./icoAsset 4.png" class="">
+            </div>
+            <div class="absolute w-full  h-16  flex justify-center top-5 ">
+                <div class=" w-3/5 h-full bg-green-400 rounded-full">
+
+                </div>
+            </div>
+            <div class="absolute  w-2/5 h-3/5 right-0 bottom-0">
+                <div class=" absolute text-7xl text-white right-3 left-0  font-serif"> Our <br>Products</div>
+                <div class=" absolute top-40 text-2xl text-justify right-6 text-white ">Only the finest, freshest and most flavourful tea leaves are selected by our expert tea 
+                tasters from the worldwide tea producers to ensure that every single cup of tea bearing the Millennium Tea 
+                name matches the high expectations of our customers.</div>
+            </div>
+
+        </div>
+
+        <!-- Tab View tabs -->
+        <div class="bg-green-900 h-16 relative z-10 ">
+            <div class="  flex flex-row  h-16 w-full " style="background-image: url('./wall-back.jpg');">
+                <div class="transform skew-x-12 bg-green-600 w-28 h-full flex ">
+                    <button id="btn1" onclick="cat1()" class="p-10 py-5 w-full  border-black border-2 border-t-0  border-b-0">
+                        Tab01
+                    </button>
+                </div>
+                
+                <div class=" transform skew-x-12 bg-yellow-300 w-28 h-full  flex ml-0">
+                    <button id="btn2" onclick="cat2()" class="p-10 py-5  w-full  border-black border-2 border-t-0 border-b-0">
+                        Tab02
+                    </button>
+                </div>
+                <div class=" transform skew-x-12 bg-yellow-300 w-28 h-full  flex ml-0">
+                    <button id="btn3" onclick="cat3()" class="p-10 py-5 w-full  border-black border-2 border-t-0 border-b-0">
+                        Tab03
+                    </button>
+                </div>
+                <div class=" transform skew-x-12 bg-yellow-300 w-28 h-full  flex ml-0">
+                    <button id="btn4" onclick="cat4()" class="p-10 py-5 w-full border-black border-2 border-t-0 border-b-0">
+                        Tab04
+                    </button>
+                </div>
+                <div class=" transform skew-x-12 bg-yellow-300 w-28 h-full  flex ml-0">
+                    <button id="btn5" onclick="cat5()" class="p-10 py-5 w-full  border-black border-2 border-t-0 border-b-0">
+                        Tab05
+                    </button>
+                </div>
+                <div class="hidden absolute transform skew-x-12 w-full h-1/6 left-2 bottom-0 bg-gray-800 "></div>
+            </div>
+            
+        </div>
+        <div id="contain" class=" h-screen bg-black relative ">
+
+            <!-- Tab view contents -->
+            <!-- category 01 -->
+            <div id= "cat01" class="w-full h-full  ">
+                <img class="absolute object-cover w-full " src="./rackAsset 11@3x.png">
+                <div class="left-0 w-full  h-20 top-1 text-white absolute text-center lg:text-8xl text-5xl font-serif">
+                    Cat 01
+                </div> 
+                <div class="flex flex-col absolute w-4/5 ">
+                </div>
+                <div id="id" class=" flex  w-full ">
+                </div>
+                <div id="row" class="w-4/5 flex flex-row  ">
+                    <div class="w-1/6  h-10 ">
+
+                    </div>
+                    <div class="w-1/6 h-10  ">
+
+                    </div>
+                    <div id="item" class="relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6  bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);" >
+                        <div class="absolute bottom-0 text-center w-full  h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6   bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6  bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+                <div id="id2" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);"  >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat " style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+                <div id="id3" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    
+                
+                </div>
+
+                <div id="id4" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);" >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- category 02 -->
+            <div id= "cat02" class="w-full h-full  ">
+                <img class="absolute bg-cover w-full" src="./rackAsset 11@3x.png">
+                <div class="left-0 w-full h-20 top-1 text-white absolute text-center lg:text-8xl text-5xl font-serif">
+                    Cat 02
+                </div> 
+                <div class="flex flex-col absolute w-4/5 ">
+                </div>
+                <div id="id" class=" flex  w-full ">
+                </div>
+                <div id="row" class="w-4/5 flex flex-row  ">
+                    <div class="w-1/6  h-10 ">
+
+                    </div>
+                    <div class="w-1/6 h-10  ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6  bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);" >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6   bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6  bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+                <div id="id2" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);"  >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat " style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+                <div id="id3" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    
+                
+                </div>
+
+                <div id="id4" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);" >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- category 03 -->
+            <div id= "cat03" class="w-full h-full  ">
+                <img class="absolute bg-cover w-full" src="./rackAsset 11@3x.png">
+                <div class="left-0 w-full h-20 top-1 text-white absolute text-center lg:text-8xl text-5xl font-serif">
+                    Cat 03
+                </div> 
+                <div class="flex flex-col absolute w-4/5 ">
+                </div>
+                <div id="id" class=" flex  w-full ">
+                </div>
+                <div id="row" class="w-4/5 flex flex-row  ">
+                    <div class="w-1/6  h-10 ">
+
+                    </div>
+                    <div class="w-1/6 h-10  ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6  bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);" >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6   bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6  bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+                <div id="id2" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);"  >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat " style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+                <div id="id3" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    
+                
+                </div>
+
+                <div id="id4" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);" >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- category 04 -->
+            <div id= "cat04" class="w-full h-full  ">
+                <img class="absolute bg-cover w-full" src="./rackAsset 11@3x.png">
+                <div class="left-0 w-full h-20 top-1 text-white absolute text-center lg:text-8xl text-5xl font-serif">
+                    Cat 04
+                </div> 
+                <div class="flex flex-col absolute w-4/5 ">
+                </div>
+                <div id="id" class=" flex  w-full ">
+                </div>
+                <div id="row" class="w-4/5 flex flex-row  ">
+                    <div class="w-1/6  h-10 ">
+
+                    </div>
+                    <div class="w-1/6 h-10  ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6  bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);" >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6   bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6  bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+                <div id="id2" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);"  >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat " style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+                <div id="id3" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    
+                
+                </div>
+
+                <div id="id4" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);" >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- category 05 -->
+            <div id= "cat05" class="w-full h-full  ">
+                <img class="absolute bg-cover w-full" src="./rackAsset 11@3x.png">
+                <div class="left-0 w-full h-20 top-1 text-white absolute text-center text-3xl lg:text-8xl  font-serif">
+                    Cat 05
+                </div> 
+                <div class="flex flex-col absolute w-4/5 ">
+                </div>
+                <div id="id" class=" flex  w-full ">
+                </div>
+                <div id="row" class="w-4/5 flex flex-row  ">
+                    <div class="w-1/6  h-10 ">
+
+                    </div>
+                    <div class="w-1/6 h-10  ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6  bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);" >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6   bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6  bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+                <div id="id2" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);"  >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat " style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class="relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+                <div id="id3" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    
+                
+                </div>
+
+                <div id="id4" class=" flex  w-full ">
+                </div>
+
+                <div id="row" class="w-4/5 flex flex-row ">
+                    <div class="w-1/6  lg:h-16 ">
+
+                    </div>
+                    <div class="w-1/6 lg:h-16 ">
+
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item" class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);" >
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                    <div id="item"  class=" relative w-1/6 bg-center bg-contain bg-no-repeat" style="background-image: url(./items/item11.png);">
+                        <div class="absolute bottom-0 text-center w-full h-1/4 bg-red-600">
+                            Hette Green
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+
+        
+        </div>
+        <div id="space" class=" z-50 bg-white  hidden lg:flex 2xl:flex">
+
+        </div>
+    <!-- Footer -->
+    
+    <div class="relative h-5/6 p-5 lg:p-20 lg:pl-20 pt-20 bg-purple-300  bg-cover bg-center" style="background-image: url(/dist/footerback.jpg);">
+        <div class="absolute h-100 w-3/12  hidden lg:flex top-10  left-10 xl:top-5">
+            <img src="/dist/side.jpg">
+        </div>
+        <div class=" h-auto bg-gray-900 bg-opacity-80 w-full flex flex-col lg:flex-row  rounded-2xl">
+            <div class="w-3/12 hidden lg:flex mb-0">
+            
+            </div>
+            <div class="lg:w-3/12 w-full lg:ml-16  text-justify  text-white lg:m-1">
+                <div class="w-full flex items-center h-auto justify-center">
+                    <img src="/dist/Logo.png">
+                </div>
+                <div class="mx-2">
+                    Today Millennium Teas’ flagship complex in Ceylon (Sri Lanka) caters to a diverse set of markets, from Australia and Europe to the US, the Middle East and Japan. We are exporting to Woolworths, Australia, Coops Supermarket chain in Denmark and Finland, Metro in Finland, SuperGros in Denmark, Food Basics in Canada and Netto in Denmark who are our esteemed clientele.
+ 
+                </div>
+             </div>
+            <div class="relative w-full lg:w-3/12  ml-5">
+                <div>
+                    <h2 class="transform -translate-x-5  font-body text-center underline text-backgroundGray text-4xl mt-10 text-white">Quick Links</h2>
+                    <hr class=" hidden lg:w-1/3">
+                    <ul class="mt-2 text-center lg:text-left lg:ml-10 transform -translate-x-5 lg:mt-10 lg:text-2xl  text-gray-300">
+                        <li class="mb-1">Home</li>
+                        <li class="mb-1">About Us</li>
+                        <li class="mb-1">Ceylon Tea</li>
+                        <li class="mb-1">Tea & Health</li>
+                        <li class="mb-1">Products</li>
+                        <li class="mb-1">News & Events</li>
+                        <li class="mb-1"> Contact Us</li>
+
+                    </ul>
+                </div>
+                    
+            </div>
+            <div class="transform -translate-x-5 text-center lg:text-left lg:w-3/12 w-full ml-5 text-white">
+                <h2 class="font-body underline text-center   lg:text-left text-backgroundGray text-4xl mt-5 lg:mt-10">Contact</h2>
+                <h4 class="text-2xl hidden lg:flex underline text-backgroundGray font-body mt-1 lg:mt-10">Address</h4>
+                <p class="font-body text-lg text-backgroundGray mt-4">Millennium Teas (Pvt.) Ltd. 161/B, <br>Ambatale Road, Mulleriyawa North,  <br>Mulleriyawa, Colombo, Sri Lanka.</p>
+                <div>
+                    <h4 class="text-2xl underline text-backgroundGray font-body mt-6">Phone</h4>
+                    <div class="flex flex-col mt-4">
+                        <a href="#" class="font-body text-lg text-backgroundGray">+94 11 4813 447
+                        </a>
+                        <a href="#" class="font-body text-lg text-backgroundGray">+94 11 4813 442
+                        </a>
+                        <a href="#" class="font-body text-lg text-backgroundGray">+94 11 4813 226
+                        </a>
+                        <a href="#" class="font-body text-lg text-backgroundGray mb-10 lg:mb-0">+94 11 2569 839</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        var cat01 = document.getElementById('cat01')
+        var cat02 = document.getElementById('cat02')
+        var cat03 = document.getElementById('cat03')
+        var cat04 = document.getElementById('cat04')
+        var cat05 = document.getElementById('cat05')
+
+        function cat1(){
+            cat01.style.transform = 'translateX(0)';
+            cat02.style.transform = 'translateX(100%)';
+            cat03.style.transform = 'translateX(100%)';
+            cat04.style.transform = 'translateX(100%)';
+            cat05.style.transform = 'translateX(100%)';
+            btn1.style.backgroundColor = "rgba(5,150,105)"; 
+            btn2.style.backgroundColor = "rgba(252,211,77)"; 
+            btn3.style.backgroundColor = "rgba(252,211,77)";
+            btn4.style.backgroundColor = "rgba(252,211,77)";
+            btn5.style.backgroundColor = "rgba(252,211,77)";
+
+        }
+        function cat2(){
+            cat02.style.transform = 'translateX(0)';
+            cat03.style.transform = 'translateX(100%)';
+            cat01.style.transform = 'translateX(100%)';
+            cat04.style.transform = 'translateX(100%)';
+            cat05.style.transform = 'translateX(100%)';
+            btn2.style.backgroundColor = "rgba(5,150,105)"; 
+            btn1.style.backgroundColor = "rgba(252,211,77)"; 
+            btn3.style.backgroundColor = "rgba(252,211,77)";
+            btn4.style.backgroundColor = "rgba(252,211,77)";
+            btn5.style.backgroundColor = "rgba(252,211,77)";
+        }
+        function cat3(){
+            cat03.style.transform = 'translateX(0)';
+            cat01.style.transform = 'translateX(100%)';
+            cat02.style.transform = 'translateX(100%)';
+            cat04.style.transform = 'translateX(100%)';
+            cat05.style.transform = 'translateX(100%)';
+            btn3.style.backgroundColor = "rgba(5,150,105)"; 
+            btn1.style.backgroundColor = "rgba(252,211,77)"; 
+            btn2.style.backgroundColor = "rgba(252,211,77)";
+            btn4.style.backgroundColor = "rgba(252,211,77)";
+            btn5.style.backgroundColor = "rgba(252,211,77)";
+        }
+        function cat4(){
+            cat04.style.transform = 'translateX(0)';
+            cat01.style.transform = 'translateX(100%)';
+            cat02.style.transform = 'translateX(100%)';
+            cat03.style.transform = 'translateX(100%)';
+            cat05.style.transform = 'translateX(100%)';
+            btn4.style.backgroundColor = "rgba(5,150,105)"; 
+            btn1.style.backgroundColor = "rgba(252,211,77)"; 
+            btn2.style.backgroundColor = "rgba(252,211,77)";
+            btn3.style.backgroundColor = "rgba(252,211,77)";
+            btn5.style.backgroundColor = "rgba(252,211,77)";
+            
+        }
+        function cat5(){
+            cat05.style.transform = 'translateX(0)';
+            cat01.style.transform = 'translateX(100%)';
+            cat02.style.transform = 'translateX(100%)';
+            cat03.style.transform = 'translateX(100%)';
+            cat04.style.transform = 'translateX(100%)';
+            btn5.style.backgroundColor = "rgba(5,150,105)"; 
+            btn1.style.backgroundColor = "rgba(252,211,77)"; 
+            btn2.style.backgroundColor = "rgba(252,211,77)";
+            btn3.style.backgroundColor = "rgba(252,211,77)";
+            btn4.style.backgroundColor = "rgba(252,211,77)";
+
+            
+        }
+
+
+    </script>
+
+    </body>
+</html>
